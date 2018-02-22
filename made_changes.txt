@@ -1,0 +1,7 @@
+Made Changes:
+
+    _slider
+        caption styling
+
+    _dropdowon:
+        width

@@ -1,0 +1,23 @@
+<div class="slider hide-on-small-only" id="BannerHeight">
+  <ul class="slides">
+
+    {% for banner in site.banners %}
+
+      <li>
+        <img src="{{ site.baseurl }}{% include directory url=banner.url %}{{ banner.images[0].url }}"> 
+        <div class="caption banner-text hoverable">
+          <h4>{{ banner.banner-headline }}</h4>
+          <p class="light grey-text text-lighten-3 flow-text">evis ist das zentrale Werkzeug für die Organisation unserer Arbeitsabläufe. Ohne das in evis abgebildete Wissen könnten wir die knapp 1.000 Veranstaltungen, die pro Saison im Wiener Konzerthaus stattfinden, nicht planen, vorbereiten und durchführen. Dass wir mit evis über ein mächtiges, allen im Haus zugängliches Wissenstool verfügen, hat uns auch bei der Zertifizierung unseres Betriebes nach ISO 9001-2015 sehr geholfen – evis ist nicht zuletzt ein Werkzeug für aktives Qualitätsmanagement.</p>
+        </div>
+      </li>
+
+    {% endfor %}
+
+  </ul>
+</div>
+    
+  
+<script>
+  var elem = document.querySelector('.slider');
+  var instance = M.Slider.init(elem, { height: 900, indicators: false });
+ </script>
