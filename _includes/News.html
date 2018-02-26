@@ -1,0 +1,27 @@
+<div class="row">
+
+  {% for news in site.news %}
+
+    <div class="col s12 m6 ">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="assets/img/wien_outside.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">{{ news.header }}<i class="material-icons right">more_vert</i></span>
+
+        </div>
+        <div class="card-reveal" style="opacity: .9">
+          <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+          <div class="container">
+            <h5>{{ news.header }}</h5>
+            <hr>
+            <p>{{ news.news-text }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  {% endfor %}
+
+</div>

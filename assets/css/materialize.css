@@ -6962,6 +6962,20 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     text-align: center;
     margin-top: 1.2rem; } }
 
+*::-moz-selection {
+  background-color: #F66728;
+  color: #fff; }
+
+*::selection {
+  background-color: #F66728;
+  color: #fff; }
+
+::-webkit-scrollbar {
+  width: 6px; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #F66728; }
+
 .slider .slides .caption {
   color: #f14646;
   position: absolute;

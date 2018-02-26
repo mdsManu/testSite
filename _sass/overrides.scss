@@ -1,3 +1,15 @@
+*::selection {
+  background-color: #F66728;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #F66728;
+}
 .slider {
     .slides {
         .caption {
